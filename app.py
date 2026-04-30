@@ -27,9 +27,9 @@ conn = psycopg2.connect(
 # =========================================
 #  CARGAR MODELO
 # =========================================
-model = joblib.load("components/model.pkl")
-scaler = joblib.load("components/scaler.pkl")
-feature_names = joblib.load("components/features.pkl")
+model = joblib.load("model.pkl")
+scaler = joblib.load("scaler.pkl")
+feature_names = joblib.load("features.pkl")
 
 st.title("Predicción de Breast cancer")
 st.write("Ingresa los valores de las variables más importantes:")
